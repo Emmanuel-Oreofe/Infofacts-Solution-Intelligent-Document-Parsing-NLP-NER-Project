@@ -8,3 +8,4 @@ doc = nlp(text)
 
 for ent in doc.ents:
     print(ent.text, ent.label_)
+print("Model loaded successfully")
