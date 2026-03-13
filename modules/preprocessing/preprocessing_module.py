@@ -1,7 +1,7 @@
 import re
 import spacy
 from datetime import datetime
-from app import fix_ocr_errors
+from modules.app import fix_ocr_errors
 
 nlp = spacy.load("en_core_web_sm")
 
@@ -57,4 +57,3 @@ def preprocess_text(text): #preproccessing
         "tokens": tokens,
         "date": date
     }
-

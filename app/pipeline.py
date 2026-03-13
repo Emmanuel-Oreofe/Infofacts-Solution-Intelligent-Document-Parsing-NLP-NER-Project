@@ -5,7 +5,6 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 from modules.ner.ner_module import extract_entities
 
-
 def run_pipeline(file_path):
 
     text = run_ocr(file_path)
@@ -16,7 +15,7 @@ def run_pipeline(file_path):
 
 
 def run_ocr(file_path):
-    extracted_text = "ICICI BANK Transfer of ₹5000 on 12-02-2024"
+    extracted_text = "ICICI BANK A/C 123456789012 IFSC ICIC0001234 Transfer of ₹5000 on 12-02-2024"
     return extracted_text
 
 def preprocess_text(text):

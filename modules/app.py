@@ -93,13 +93,15 @@ def extract_data(text):
     }
 
 # Test the function
-text = """
-Bank A/C No: 123456789o 
-IFSC: SB1N0001234
-Date: 12/02/2026
-Amount: Rs. 45,00o
-"""
+if __name__ == "__main__":
+    # Test the function
+    text = """
+    Bank A/C No: 123456789o 
+    IFSC: SB1N0001234
+    Date: 12/02/2026
+    Amount: Rs. 45,00o
+    """
 
-result = extract_data(text)
-print(result)
-print(extract_data(text))
+    result = extract_data(text)
+    print(result)
+    print(extract_data(text))
